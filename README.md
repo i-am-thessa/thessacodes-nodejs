@@ -1,4 +1,4 @@
-# CRUD API POC - Node.js
+# ThessaCodes | Node.js CRUD API
 
 A Proof of Concept (POC) demonstrating a clean and maintainable RESTful CRUD API built with **Node.js**, designed to run both as a traditional **Express** application and as a **Serverless AWS Lambda** application.
 
