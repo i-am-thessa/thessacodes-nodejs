@@ -11,4 +11,4 @@ Use
 - IAM Roles
 - AWS CLI credentials
 
-Report security issues privately.
+Report security issues privatel

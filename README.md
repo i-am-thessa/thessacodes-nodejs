@@ -261,6 +261,8 @@ The same Postman collection is reused by changing only the `baseUrl` environment
 - Role-Based Access Control (RBAC)
 - Request Validation
 - API Rate Limiting
+- SQL Injection Prevention
+- CORS and CSRF Best Practices
 
 ### Quality
 
@@ -282,8 +284,33 @@ The same Postman collection is reused by changing only the `baseUrl` environment
 - Multi-Environment Deployment
 - Docker Development Environment
 
+### Scalability & Reliability
+
+- API Rate Limiting 
+- Circuit Breaker
+- Feature Toggles
+
 ---
 
+# Project Documentation
+
+Additional documentation is available under the [`docs`](docs/) directory.
+
+| Document | Description |
+|----------|-------------|
+| 📖 [API.md](docs/API.md) | REST API endpoints, request/response examples, and usage. |
+| 🏛️ [DECISIONS.md](docs/DECISIONS.md) | Architecture Decision Records (ADRs) and key design decisions. |
+| 🚀 [DEPLOYMENT.md](docs/DEPLOYMENT.md) | Deploying the application with AWS SAM and CloudFormation. |
+| 💻 [DEVELOPMENT.md](docs/DEVELOPMENT.md) | Local development setup, prerequisites, and development workflow. |
+| 🗺️ [ROADMAP.md](docs/ROADMAP.md) | Planned features and future enhancements. |
+| 📋 [CHANGELOG.md](docs/CHANGELOG.md) | Version history and notable project changes. |
+| 🤝 [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Contribution guidelines and coding standards. |
+| 🔒 [SECURITY.md](docs/SECURITY.md) | Security policy, credential management, and responsible disclosure. |
+| 📄 [LICENSE.md](docs/LICENSE.md) | Project licensing information. |
+
+> These documents provide additional details on the project's architecture, development practices, deployment process, and future direction.
+
+---
 # Author
 
 **ThessaCodes [NodeJS]**
