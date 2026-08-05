@@ -167,7 +167,7 @@ Create a `.env` file in the project root with the following configuration:
 
 ```properties
 AWS_REGION=ap-southeast-1
-REPOSITORY_PROVIDER=dynamodb
+REPOSITORY_PROVIDER=in-memory
 USER_TABLE=Users
 PORT=3000
 ```
