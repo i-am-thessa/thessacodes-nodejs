@@ -184,6 +184,15 @@ PORT=3000
 
 The same codebase can be executed in **three different environments**.
 
+A ready-to-use Postman collection is available to simplify testing across all supported runtime environments.
+
+**Download Postman Collection**
+
+https://drive.google.com/file/d/1zALMunOZFvi7YtX4TUCXHKawwwF6br3B/view?usp=drive_link
+
+The collection is preconfigured to support the following environments by changing only the `baseUrl` variable:
+
+
 | Environment | Command | Endpoint | Purpose |
 |------------|---------|----------|---------|
 | **Local Express** | `npm run dev` | `http://localhost:3000` | Fast local development and debugging |
