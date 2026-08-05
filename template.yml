@@ -1,0 +1,49 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+  Function:
+    Timeout: 30
+    Runtime: nodejs22.x
+    Architectures:
+      - x86_64
+
+Resources:
+
+  UserFunction:
+    Type: AWS::Serverless::Function
+
+    Properties:
+      CodeUri: .
+      Handler: src/bootstrap/lambda.handler
+
+      Environment:
+        Variables:
+          USER_TABLE: Users
+          REPOSITORY_PROVIDER: dynamodb
+
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: Users
+
+      Events:
+
+        Users:
+          Type: HttpApi
+          Properties:
+            Path: /users
+            Method: ANY
+
+        UserById:
+          Type: HttpApi
+          Properties:
+            Path: /users/{id}
+            Method: ANY
+
+Outputs:
+
+  ApiEndpoint:
+    Description: API Gateway endpoint
+    Value:
+      Fn::Sub: https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com
