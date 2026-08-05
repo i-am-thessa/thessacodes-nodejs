@@ -1,3 +1,3 @@
 module.exports = {
-    provider: process.env.REPOSITORY_PROVIDER || "memory"
+    provider: process.env.REPOSITORY_PROVIDER || "in-memory"
 };

@@ -2,7 +2,7 @@ const { provider } = require("../../configs/repository");
 
 switch (provider.toLowerCase()) {
 
-    case "memory":
+    case "in-memory":
         module.exports = require("../in-memory/userRepository");
         break;
 
